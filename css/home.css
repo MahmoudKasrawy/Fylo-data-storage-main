@@ -1,0 +1,230 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: bottom;
+  background-color: #0c122c;
+ 
+}
+
+.cards{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card1{
+  margin-left: 0.4rem;
+  border-radius: 0.8rem;
+  border-top-right-radius:6rem ;
+  display: flex;
+  align-items: center;
+  padding:1.6rem;
+  background-color: #1d2c67;
+  width: 330px;
+ height: 180px;
+}
+.fylo-logo{
+
+    margin-bottom: 1.7rem;
+
+}
+.fylo-logo img{
+  width: 120px;
+}
+
+.icons{
+
+
+  display: flex;
+  justify-content: space-around;
+ 
+}
+ .docu{
+ width: 20;
+ border-radius: 0.5rem;
+background-color: #08123a;
+padding: 0.9rem;
+
+}
+.fold{
+  width: 40;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+ background-color: #08123a;
+ padding: 0.9rem;
+ 
+ }
+ .up{
+  width: 40;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+ background-color: #08123a;
+ padding: 0.9rem;
+ 
+ }
+.storage{
+  position: relative;
+  align-items: center;
+  margin: 2rem 0rem 0rem 2rem; 
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 480px;
+  height: 135px;
+  background-color: #1d2c67;
+}
+.storage p{
+  font-size: 0.8em;
+  color: gray;
+}
+strong{
+  font-family:Arial, Helvetica, sans-serif;
+  color:rgb(194, 199, 199);
+}
+.progress-bar{
+
+  padding: 3px;
+  border-radius: 1rem;
+  width: 100%;
+  margin: 1rem 0rem 1rem 0rem;
+  background-color: #10183c;
+ border: none;
+}
+.progress-bar-color{
+  width: 75%;
+  background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+  padding: 5px;
+ border-radius: 0.5rem;
+ position: relative;
+}
+.ball{
+  width: 0.7rem;
+  height:0.7rem;
+  background-color: aliceblue;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top:-1px;
+
+}
+.inf{
+
+  display: flex;
+  justify-content: space-between;
+}
+.inf h2{
+  margin-bottom: 0.4rem;
+  color: rgb(207, 201, 201);
+  font-size: 0.7em;
+
+}
+.inf h3{
+  color: rgb(207, 201, 201);
+  font-size: 0.7em;
+
+}
+.triangle {
+  display: none;
+  border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.msg-container{
+  position: relative;
+  width: 150px;
+  height: 60px;
+  background-color: white;
+ position: absolute;
+ top: -40px;
+ right:  35px;
+padding: 0.7rem;
+border-radius: 10px;
+}
+.msg{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+} 
+.msg h2{
+  margin-right: 0.7rem;
+  font-weight: 900;
+  font-size: 2em;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.msg span{
+
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: gray;
+  
+}
+.triangle {
+  right: 0;
+  bottom: -20px;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right:20px solid white;
+  border-top: 10px solid white;
+  border-left: 10px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+@media (max-width:570px){
+  body{
+    
+   background-image: url(../images/bg-mobile.png);
+   background-size: cover;
+  }
+  .cards{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  .card1{
+    margin-left: 0.4rem; 
+    border-radius: 0.8rem;
+    border-top-right-radius:6rem ;
+    display: flex;
+    align-items: center;
+    padding:1.6rem;
+    background-color: #1d2c67;
+    width: 330px;
+   height: 200px;
+  }
+  .storage{
+    position: relative;
+    align-items: center;
+    margin: 2rem 2rem 0rem ; 
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 331px;
+  height: 160px;
+  background-color: #1d2c67;
+  }
+  .msg-container{
+ 
+    width: 150px;
+    height: 60px;
+    background-color: white;
+   position: absolute;
+   top:130px;
+   left:  90px;
+  padding: 0.7rem;
+  border-radius: 10px;
+  }
+  .triangle {
+    display: none;
+  }
+}
